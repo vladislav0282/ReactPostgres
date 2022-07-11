@@ -1,0 +1,18 @@
+создадим проект (папку)
+
+инициализируем проект: npm init -y(сразу чтобы ничего не вводить)
+
+установим express: npm install express pg pg-hstorequ(для работы с БД) 
+qsequeluze(ОРМ) cors(для обращения от браузера к серверу) dotenv(что бы 
+задавать переменные окружения)
+
+установим: npm install -D nodemon (что бы север перегружался 
+автоматически в режиме разработки)
+в package.json
+ "scripts": {
+    "dev": "nodemon index.js"
+
+В index.js
+
+
+
