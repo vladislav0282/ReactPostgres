@@ -1,0 +1,56 @@
+Установим React
+npx create-react-app .
+
+Удалим все файлы кроме index.js и App.js
+
+Установим
+npm i axios react-router-dom mobx-react-lite //mobx-стейт менеджер, react-router-dom - для постраничной навигации
+
+
+Установим bootstrap (в yandex забиваем react-bootstrap)
+npm install react-bootstrap bootstrap
+скопируем в будстрапе стили и добавим их в index.html(папка pablic)
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+  crossorigin="anonymous"
+/>
+
+Запускаем npm start (Если браузер открылся значит приложение работает)
+
+Создаем папки pages, components, store
+
+Создаем файл routes.js
+В нем два массива (один для всех, а другой только для Администратора (с ролью ADMIN))
+
+export const authRoutes = [
+    
+    {
+        path: ADMIN_ROUTE,
+        Component: Admin
+    },
+    {
+        path: BASKET_ROUTE,
+        Component: Basket
+    }
+
+]
+
+export const pablicRoutes = [
+    {
+        path: SHOP_ROUTE,
+        Component: Shop
+    },
+    {
+        path: LOGIN_ROUTE,
+        Component: Auth
+    },
+    {
+        path: REGISTRATION_ROUTE,
+        Component: Auth
+    },
+    {
+        path: DEVICE_ROUTE + '/:id',
+        Component: DevicePage
+    },
