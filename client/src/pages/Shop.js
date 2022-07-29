@@ -18,7 +18,6 @@ const Shop = () => {
           <BrandBar/>
           <DeviceList/>
         </Col>
-
       </Row>
     </Container>
   )

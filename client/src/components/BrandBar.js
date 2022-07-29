@@ -1,17 +1,17 @@
 import React from 'react';
 import { observer } from 'mobx-react-lite';
-import Row from 'react-bootstrap/Row';
-import Card from 'react-bootstrap/Card';
-import { Context } from './../index';
+import {Card, Row} from 'react-bootstrap';
+import { Context } from '../index';
 import { useContext } from 'react';
 
 
 const BrandBar = observer(() => {
   const {device} = useContext(Context)
   return (
-    <Row className='d-flex'>
+    <Row className="d-flex">
         {device.brands.map(brand =>
-            <Card
+ 
+            <Card 
                 style={{cursor:"pointer"}}
                 key={brand.id}
                 className="p-3"
