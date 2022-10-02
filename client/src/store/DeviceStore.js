@@ -22,6 +22,10 @@ export default class DeviceStore {
             {id: 2, name: 'Iphone 12 pro', price: 25000, rating: 5, img: ''},
             {id: 3, name: 'Iphone 12 pro', price: 25000, rating: 5, img: ''},
             {id: 4, name: 'Iphone 12 pro', price: 25000, rating: 5, img: ''},
+            {id: 2, name: 'Iphone 12 pro', price: 25000, rating: 5, img: ''},
+            {id: 3, name: 'Iphone 12 pro', price: 25000, rating: 5, img: ''},
+            {id: 4, name: 'Iphone 12 pro', price: 25000, rating: 5, img: ''},
+            {id: 4, name: 'Iphone 12 pro', price: 25000, rating: 5, img: ''},
         ]
 
         this._selectedType = {}
